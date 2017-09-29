@@ -18,8 +18,8 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: transparent url("http://p3.music.126.net/u_LfZBnPcrXZQRW4Z6eDBQ==/109951163011166051.jpg") no-repeat center center;
-    background-size: cover;
+    background: url("http://p3.music.126.net/u_LfZBnPcrXZQRW4Z6eDBQ==/109951163011166051.jpg") no-repeat center center;
+    /*background-size: cover;*/
 }
 .page .disc-container {
     position: relative;
@@ -41,17 +41,58 @@
 .page .disc-container .halo {
     width: 72vw;
     position: absolute;
-    animation: rotate infinite 20s linear;
 }
 .page .disc-container .cover {
     width: 44.5vw;
     position: absolute;
     border-radius: 50%;
+}
+.page .disc-container.playing .cover,.page .disc-container.playing .halo {
     animation: rotate infinite 20s linear;
 }
 .page .song-description {
-
+    /*color: #AEABAC;*/
+    text-align: center;
+    line-height: 2;
+    margin-top: 2vw;
+    padding: 8vw;
+    flex: 1;
+    color: #fff;
+}
+.page .song-description h1 {
+    font-size: 18px;
+}
+.page .song-description .lyric {
+    height: 30vw;
+    overflow: hidden;
+}
+.page .song-description .lyric p {
+    font-size: 14px;
+    line-height: 10vw;
+}
+.page .song-description .lyric p.active {
+    color: white;
 }
 .page > .links {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page > .links a {
+    width: 38.5vw;
+    text-align: center;
+    text-decoration: none;
+    padding: 2vw;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.page > .links .open {
+    border: 1px solid #d43b32;
+    color: #d43b32;
+    margin: 1em 0.5em 1em 1em;
+}
+.page > .links .downLoad {
+    color: #fff;
+    background: #d43b32;
+    margin: 1em 1em 1em 0.5em;
 }
