@@ -10,7 +10,7 @@ $(function () {
                             <svg class="sq">
                                 <use xlink:href="#icon-SQ"></use>
                             </svg>
-                        演唱者1--专辑1
+                        ${i.singer}
                         </p>
                         <svg class="play">
                             <use xlink:href="#icon-play"></use>

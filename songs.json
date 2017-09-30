@@ -2,51 +2,61 @@
   {
     "id": "1",
     "url": "http://ox2pbpy73.bkt.clouddn.com/%E7%9C%8B%E9%80%8F%E4%BB%A5%E5%90%8E.mp3",
-    "name": "看透以后"
+    "name": "看透以后",
+    "singer": "音阙诗听 - 看透以后"
   },
   {
     "id": "2",
     "url": "http://ox2pbpy73.bkt.clouddn.com/%E7%88%B1%E5%91%80.mp3",
-    "name": "爱呀"
+    "name": "爱呀",
+    "singer": "金玟岐 - 金玟岐作品集"
   },
   {
     "id": "3",
     "url": "http://ox2pbpy73.bkt.clouddn.com/%E4%B9%9F%E7%BD%A2.mp3",
-    "name": "也罢"
+    "name": "也罢",
+    "singer": "鲁向卉 - 也罢"
   },
   {
-    "id": "1",
-    "url": "http://ox2pbpy73.bkt.clouddn.com/%E7%9C%8B%E9%80%8F%E4%BB%A5%E5%90%8E.mp3",
-    "name": "看透以后"
+    "id": "4",
+    "url": "http://ox2pbpy73.bkt.clouddn.com/closer.mp3",
+    "name": "Closer",
+    "singer": "The Chainsmokers - Closer"
   },
   {
-    "id": "1",
-    "url": "http://ox2pbpy73.bkt.clouddn.com/%E7%88%B1%E5%91%80.mp3",
-    "name": "爱呀"
+    "id": "5",
+    "url": "http://ox2pbpy73.bkt.clouddn.com/shapeOfMyHeart.mp3",
+    "name": "Shape Of My Heart",
+    "singer": "Sting- Fifteen Healing Bites"
   },
   {
-    "id": "1",
-    "url": "http://ox2pbpy73.bkt.clouddn.com/%E4%B9%9F%E7%BD%A2.mp3",
-    "name": "也罢"
+    "id": "6",
+    "url": "http://ox2pbpy73.bkt.clouddn.com/%E5%87%89%E5%9F%8E.mp3",
+    "name": "凉城 ",
+    "singer": "任然 - 后继者"
   },
   {
-    "id": "1",
-    "url": "http://ox2pbpy73.bkt.clouddn.com/%E7%9C%8B%E9%80%8F%E4%BB%A5%E5%90%8E.mp3",
-    "name": "看透以后"
+    "id": "7",
+    "url": "http://ox2pbpy73.bkt.clouddn.com/daisy.mp3",
+    "name": "Daisy",
+    "singer": "飯田龍太 - Daisy"
   },
   {
-    "id": "1",
-    "url": "http://ox2pbpy73.bkt.clouddn.com/%E7%88%B1%E5%91%80.mp3",
-    "name": "爱呀"
+    "id": "8",
+    "url": "http://ox2pbpy73.bkt.clouddn.com/%E6%81%8B%E7%88%B1%E5%BE%AA%E7%8E%AF.mp3",
+    "name": "恋爱サーキュレーション",
+    "singer": "花澤香菜 - 化物语"
   },
   {
-    "id": "1",
-    "url": "http://ox2pbpy73.bkt.clouddn.com/%E4%B9%9F%E7%BD%A2.mp3",
-    "name": "也罢"
+    "id": "9",
+    "url": "http://ox2pbpy73.bkt.clouddn.com/bleeding%20love.mp3",
+    "name": "Bleeding Love",
+    "singer": "Leona Lewis - Bleeding Love"
   },
   {
-    "id": "1",
-    "url": "http://ox2pbpy73.bkt.clouddn.com/%E4%B9%9F%E7%BD%A2.mp3",
-    "name": "也罢"
+    "id": "10",
+    "url": "http://ox2pbpy73.bkt.clouddn.com/price%20tag.mp3",
+    "name": "Price Tag",
+    "singer": "Jessie J - Price Tag"
   }
 ]
