@@ -27,9 +27,17 @@ $(function () {
         })
     })
     let audio = document.createElement('audio')
-    audio.src='http://m10.music.126.net/20170930004535/9c19b17fad238861af285a2cea5795eb/ymusic/65f1/9c10/8777/3024762a7e227382f56e543aa0041f4b.mp3'
+    audio.src='//dl.stream.qqmusic.qq.com/C400001AjnfP2g3gdz.m4a?vkey=D890974519FF528FB0FC34C31C64E47D69B7C47F60E3BC0F3EFBA3F67BA6DBBBEA1F8428B474F7899283C35B5F9997DD169CBBB1527EFBAE&guid=7669628493&uin=0&fromtag=66';
     audio.oncanplay = function () {
         audio.play()
         $('.disc-container').addClass('playing')
     }
+    $('.iconPause').on('click',function () {
+        audio.pause()
+        $('.disc-container').removeClass('playing')
+    })
+    $('.iconPlay').on('click',function () {
+        audio.play()
+        $('.disc-container').addClass('playing')
+    })
 })

@@ -41,14 +41,44 @@
 .page .disc-container .halo {
     width: 72vw;
     position: absolute;
+    animation: rotate infinite 20s linear;
+    animation-play-state: paused;
 }
 .page .disc-container .cover {
     width: 44.5vw;
     position: absolute;
     border-radius: 50%;
+    animation: rotate infinite 20s linear;
+    animation-play-state: paused;
 }
 .page .disc-container.playing .cover,.page .disc-container.playing .halo {
     animation: rotate infinite 20s linear;
+    animation-play-state: running;
+}
+.page .disc-container .disc .iconWrapper {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+}
+.page .disc-container .disc .iconWrapper .icon {
+    width: 10vw;
+    fill: white;
+}
+.page .disc-container .iconPause {
+    display: none;
+}
+.page .disc-container.playing .iconPause {
+    display: block;
+}
+.page .disc-container.playing .iconPlay {
+    display: none;
 }
 .page .song-description {
     /*color: #AEABAC;*/
