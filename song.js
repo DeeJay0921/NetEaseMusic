@@ -27,7 +27,7 @@ $(function () {
         })
     })
     let audio = document.createElement('audio')
-    audio.src='//dl.stream.qqmusic.qq.com/C400001AjnfP2g3gdz.m4a?vkey=D890974519FF528FB0FC34C31C64E47D69B7C47F60E3BC0F3EFBA3F67BA6DBBBEA1F8428B474F7899283C35B5F9997DD169CBBB1527EFBAE&guid=7669628493&uin=0&fromtag=66';
+    audio.src = '//ox2pbpy73.bkt.clouddn.com/1048%252Fd3ce%252Ffec4%252F0bcebfc98d9bb363e1f43030af38ddc4.mp3'
     audio.oncanplay = function () {
         audio.play()
         $('.disc-container').addClass('playing')
