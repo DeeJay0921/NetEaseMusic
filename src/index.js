@@ -56,8 +56,8 @@ $(function () {
                 </li>`)
                 $('.hotSongs').append($li2)
                 })
-                $('#latestMusicLoading2').remove()
             })
+            $('#latestMusicLoading2').remove()
         }
         else if (i === 2) {
             $.get('./songs.json').then((res)=> {
