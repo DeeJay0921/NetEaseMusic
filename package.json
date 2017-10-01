@@ -1,0 +1,27 @@
+{
+  "name": "NetEaseMusic",
+  "version": "1.0.0",
+  "description": "![预览二维码](http://ox2pbpy73.bkt.clouddn.com/%E9%A2%84%E8%A7%88.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeeJay0921/NetEaseMusic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeeJay0921/NetEaseMusic/issues"
+  },
+  "homepage": "https://github.com/DeeJay0921/NetEaseMusic#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  }
+}
