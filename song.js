@@ -7,26 +7,20 @@ $(function () {
         let song = songs.filter((s)=>{
             return s.id == id
         })
-        let {url} = song[0]
-        let audio = document.createElement('audio')
-        audio.src = url
-        $('.songTitle').text(song[0].name)
-        audio.oncanplay = function () {
-            audio.play()
-            $('.disc-container').addClass('playing')
-        }
-        $('.iconPause').on('click',function () {
-            audio.pause()
-            $('.disc-container').removeClass('playing')
-        })
-        $('.iconPlay').on('click',function () {
-            audio.play()
-            $('.disc-container').addClass('playing')
-        })
+        let {url,name,lyric} = song[0]
+        initPlayer.call(undefined,url)
+        initText(name,lyric)
     })
-
-    $.get('/lyric.json').then(function (response) {
-        let {lyric} = response
+    
+    //lyric & name
+    function initText(name, lyric) {
+        $('.songTitle').text(name)
+        // console.log(name,lyric)
+        parseLyric(lyric)
+        console.log(lyric)
+    }
+    
+    function parseLyric(lyric) {
         let arr = lyric.split('\n')
         let regExp = /^\[(.+)\](.*)$/;
         arr = arr.map(function (string) {
@@ -51,6 +45,30 @@ $(function () {
             }
 
         })
+    }
+    
+    
+    // url
+    function initPlayer(url) {
+        let audio = document.createElement('audio')
+        audio.src = url
+        audio.oncanplay = function () {
+            audio.play()
+            $('.disc-container').addClass('playing')
+        }
+        $('.iconPause').on('click',function () {
+            audio.pause()
+            $('.disc-container').removeClass('playing')
+        })
+        $('.iconPlay').on('click',function () {
+            audio.play()
+            $('.disc-container').addClass('playing')
+        })
+    }
+
+    $.get('/lyric.json').then(function (response) {
+        let {lyric} = response
+
     })
 
 })
