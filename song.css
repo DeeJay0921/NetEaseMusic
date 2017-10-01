@@ -96,9 +96,13 @@
     height: 30vw;
     overflow: hidden;
 }
+.page .song-description .lyric .lines {
+    transition: all .3s;
+}
 .page .song-description .lyric p {
     font-size: 14px;
     line-height: 10vw;
+    color: #888;
 }
 .page .song-description .lyric p.active {
     color: white;
