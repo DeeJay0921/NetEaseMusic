@@ -93,9 +93,5 @@ $(function () {
         return number >= 10 ? number + '' : '0' + number
     }
 
-    $.get('/lyric.json').then(function (response) {
-        let {lyric} = response
-
-    })
 
 })

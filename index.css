@@ -68,6 +68,12 @@ body {
     left: -1vw;
     right: -1vw;
 }
+ .tab-content > li {
+    display: none;
+}
+ .tab-content > li.active {
+    display: block;
+}
 section>h2:first-child {
     font-size: 4.5vw;
     border-left: 2px solid #d33a31;
@@ -168,8 +174,158 @@ section.art .openApp {
     margin-top: 3vw;
 }
 section.art .copyright {
-    font-size: 3.2px;
+    font-size: 3.2vw;
     color: #888;
     transform: scale(.75);
     text-align: center;
+}
+.tab-content li #latestMusicLoading2 {
+    padding-top: 20vw;
+    text-align: center;
+}
+.tab-content li .hotPic {
+    height: 38vw;
+    background: url("http://ox2pbpy73.bkt.clouddn.com/hot-sing.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.tab-content li .hotPic .img {
+    position: absolute;
+    width: 43vw;
+    height: 24vw;
+    background: url("http://ox2pbpy73.bkt.clouddn.com/hot-icon.png") no-repeat;
+    background-size: cover;
+    background-position: -6vw -8vw;
+    top: 7vw;
+    left: 6vw;
+}
+.tab-content li .hotPic .img span {
+    position: absolute;
+    font-size: 2.5vw;
+    top: 20vw;
+    left: 1vw;
+    color: hsla(0,0%,100%,.8);
+}
+
+/*hotsongs*/
+ol.hotSongs {
+    padding-left: calc(2vw + 2px);
+}
+ol.hotSongs > li {
+    padding: 1.3vw 0;
+    position: relative;
+}
+ol.hotSongs > li:nth-child(even) {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+ol.hotSongs > li h3 {
+    color: #333;
+    font-size: 4.53vw;
+    margin-bottom: .5vw;
+}
+ol.hotSongs > li p {
+    font-size: 3.2vw;
+    line-height: 1;
+    color: #888;
+    display: flex;
+}
+ol.hotSongs > li svg.play {
+    width: 5.9vw;
+    height: 5.9vw;
+    position: absolute;
+    right: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #aaa;
+}
+ol.hotSongs > li svg.sq {
+    width: 4vw;
+    height: 4vw;
+    margin-right: .5em;
+    fill: #fe632e;
+}
+.tab-content li .checkMore {
+    text-align: center;
+}
+.tab-content li .checkMore a {
+    display: inline-block;
+    color: #999;
+    padding: 4vw 0;
+}
+.tab-content li .input {
+    padding: 5vw 1vw;
+    border-bottom: 1px solid #e4e5e6;
+}
+.tab-content li .input .input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4vw;
+    padding: 1.5vw;
+    background: #ebecec;
+    margin: 0 1vw;
+}
+.tab-content li .input .search-icon {
+    width: 4vw;
+    height: 4vw;
+    background: #ebecec;
+    margin: 0 2vw 0 1vw;
+    fill: #d1d2d2;
+}
+.tab-content li .input input {
+    display: inline-block;
+    width: 96vw;
+    border: none;
+    outline: none;
+    background: #ebecec;
+}
+.tab-content li .input input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #c9c9c9;
+}
+.tab-content li .input input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #c9c9c9;
+}
+.tab-content li .input input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #c9c9c9;
+}
+.tab-content li .input input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #c9c9c9;
+}
+.tab-content li .hot-search h3 {
+    margin: 2vw;
+    color: #666;
+    font-size: 1vw;
+}
+.tab-content li .hot-search .search-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3vw;
+    justify-content: flex-start;
+}
+.tab-content li .hot-search .search-list a {
+    display: inline-block;
+    color: #333;
+    border: 1px solid #dddee3;
+    border-radius: 4.5vw;
+    padding: 1.5vw 3vw;
+    margin: 0 2vw 1.5vw 2vw;
+    margin-bottom: 1.5vw;
+}
+.tab-content li .show-res {
+    display: none;
+}
+.tab-content li .show-res .search-res {
+    display: flex;
+    padding: 3vw;
+    border-top: 1px solid #e4e5e6;
+    align-items: center;
+}
+.tab-content li .show-res .search-res .search-icon {
+    width: 4vw;
+    height: 4vw;
+    margin: 0 2vw 0 0;
+    fill: #b1b1b2;
+}
+.tab-content li .show-res .search-res p {
+    color: #333;
 }
